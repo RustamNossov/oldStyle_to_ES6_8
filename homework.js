@@ -7,14 +7,12 @@ const employers = ['Alex', '', 'ludmila', 'Viktor', '', 'oleg', 'iNna', 'Ivan', 
 // 		employersNames.push(employers[i]);
 // 	}
 // }
-let employersNames = employers.filter((item) => {return item.length > 0})
+let employersNames = employers.filter((item) => {return item.length > 0}).map((item) => {return item.charAt(0).toUpperCase() + item.slice(1);})
 
 
 // for (var i = 0; i < employersNames.length; i++) {
 // 	employersNames[i] = employersNames[i].toLowerCase().trim();
 // }
-employersNames = employersNames.map((item) => {return item.charAt(0).toUpperCase() + item.slice(1);})
-
 
 //var sponsors = {
 const sponsors = {
